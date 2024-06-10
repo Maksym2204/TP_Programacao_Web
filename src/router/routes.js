@@ -1,6 +1,10 @@
 import DashboardLayout from "@/layout/dashboard/DashboardLayout.vue";
-// GeneralViews
 import NotFound from "@/pages/NotFoundPage.vue";
+import Lista from "@/pages/Lista.vue";
+import Home from "@/pages/Home.vue";
+import Museu from "@/pages/Museu.vue";
+import Login from "@/pages/Login.vue";
+import Register from "@/pages/Register.vue";
 
 // Admin pages
 const Dashboard = () =>
@@ -20,8 +24,28 @@ const TableList = () =>
 const routes = [
   {
     path: "/",
+    name: "home",
+    component: Home,
+  },
+  {
+    path: "/lista",
+    name: "Lista",
+    component: Lista,
+  },
+  {
+    path: "/museu",
+    name: "Museu",
+    component: Museu,
+  },
+  {
+    path: "/not-found",
+    name: "Not-Found",
+    component: NotFound,
+  },
+  {
+    path: "/admin",
     component: DashboardLayout,
-    redirect: "/dashboard",
+    redirect: "/admin/dashboard",
     children: [
       {
         path: "dashboard",
@@ -60,16 +84,20 @@ const routes = [
       },
     ],
   },
-  { path: "*", component: NotFound },
+  {
+    path: "/login",
+    name: "login",
+    component: Login,
+  },
+  {
+    path: "/register",
+    name: "register",
+    component: Register,
+  },
+  {
+    path: "*",
+    component: NotFound,
+  },
 ];
-
-/**
- * Asynchronously load view (Webpack Lazy loading compatible)
- * The specified component must be inside the Views folder
- * @param  {string} name  the filename (basename) of the view to load.
-function view(name) {
-   var res= require('../components/Dashboard/Views/' + name + '.vue');
-   return res;
-};**/
 
 export default routes;
