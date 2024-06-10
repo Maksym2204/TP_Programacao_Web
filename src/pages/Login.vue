@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="login-container">
     <h2>Login</h2>
     <form @submit.prevent="login">
       <div>
@@ -12,7 +12,6 @@
       </div>
       <button type="submit">Login</button>
     </form>
-    <p v-if="errorMessage">{{ errorMessage }}</p>
   </div>
 </template>
 
@@ -21,20 +20,24 @@ export default {
   data() {
     return {
       username: '',
-      password: '',
-      errorMessage: ''
+      password: ''
     };
   },
   methods: {
     login() {
-      // Simulate a login process
-      if (this.username === 'admin' && this.password === 'admin') {
-        alert('Login successful');
-        this.$router.push('/dashboard');
+      const users = JSON.parse(localStorage.getItem('users')) || [];
+      const user = users.find(user => user.username === this.username && user.password === this.password);
+      if (user) {
+        alert('Login successful!');
+        this.$router.push('/dashboard'); // Redirect to a protected route
       } else {
-        this.errorMessage = 'Invalid credentials';
+        alert('Invalid username or password');
       }
     }
   }
 };
 </script>
+
+<style scoped>
+
+</style>
