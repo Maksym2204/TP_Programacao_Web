@@ -673,7 +673,7 @@
 
 <script>
 export default {
-  name: 'Museu'
+  name: 'Home'
 };
 </script>
 
