@@ -28,7 +28,7 @@ export default {
       const users = JSON.parse(localStorage.getItem('users')) || [];
       users.push({username: this.username, password: this.password});
       localStorage.setItem('users', JSON.stringify(users));
-      alert('Registration successful!');
+      alert('Registo bem sucedido!');
       this.$router.push('/login');
     }
   }
