@@ -29,7 +29,7 @@ export default {
       const user = users.find(user => user.username === this.username && user.password === this.password);
       if (user) {
         alert('Login successful!');
-        this.$router.push('/dashboard'); // Redirect to a protected route
+        this.$router.push('/home'); // Redirect to a protected route
       } else {
         alert('Invalid username or password');
       }
