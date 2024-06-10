@@ -15,8 +15,12 @@
             <span class="home-nav52 bodySmall">Temáticos</span>
           </nav>
           <div class="home-buttons">
+            <router-link to="/login">
             <button class="home-login buttonFlat">Entrar</button>
+            </router-link>
+            <router-link to="/register">
             <button class="buttonFilled">Registo</button>
+            </router-link>
           </div>
         </div>
         <div data-thq="thq-burger-menu" class="home-burger-menu">
@@ -46,9 +50,9 @@
               <span class="home-nav521 bodySmall">Contact</span>
             </nav>
             <div class="home-buttons1">
-              <button class="buttonFlat">Login</button>
-              <button class="buttonFilled">Register</button>
-            </div>
+      <button class="buttonFlat">Login</button>
+      <button class="buttonFilled">Register</button>
+  </div>
           </div>
           <div>
             <svg
@@ -104,9 +108,11 @@
             </span>
           </span>
           <div class="home-btn-group">
+            <router-link to="/museu">
             <button class="home-hero-button1 buttonFilled">
               Museus parceiros
             </button>
+            </router-link>
             <button class="buttonFlat">Saiba mais...</button>
           </div>
           <app-gallery7></app-gallery7>
@@ -443,8 +449,8 @@ export default {
     title: 'Spotless Hungry Crocodile',
   },
 }
-</script>
 
+</script>
 <style scoped>
 .home-container {
   width: 100%;
@@ -505,6 +511,7 @@ export default {
 .home-login {
   width: 45px;
   margin-right: 32px;
+  cursor: pointer;
 }
 
 .home-burger-menu {

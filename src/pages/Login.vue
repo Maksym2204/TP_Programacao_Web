@@ -1,5 +1,5 @@
 <template>
-  <div class="login-container">
+  <div>
     <h2>Login</h2>
     <form @submit.prevent="login">
       <div>
@@ -12,6 +12,7 @@
       </div>
       <button type="submit">Login</button>
     </form>
+    <p v-if="errorMessage">{{ errorMessage }}</p>
   </div>
 </template>
 
@@ -37,7 +38,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-
-</style>
