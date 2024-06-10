@@ -33,10 +33,10 @@ export default {
       const users = JSON.parse(localStorage.getItem('users')) || [];
       const user = users.find(user => user.username === this.username && user.password === this.password);
       if (user) {
-        alert('Login successful!');
-        this.$router.push('/dashboard'); // Redirect to a protected route
+        alert('Login bem sucedido!');
+        this.$router.push('/home');
       } else {
-        this.errorMessage = 'Invalid username or password';
+        alert('Nome de utilizador ou Password errada');
       }
     }
   }
