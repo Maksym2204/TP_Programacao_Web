@@ -314,7 +314,7 @@
               <div class="gallery1-container1">
                 <img
                   alt="Escultura contemporânea em destaque no Museu de Serralves"
-                  src="..\public\img\ArtImagem.jpg"
+                  src="../../public/img/ArtImagem.jpg"
                   class="thq-img-ratio-4-3"
                 />
               </div>
@@ -333,7 +333,7 @@
             <div class="features17-image-container">
               <img
                 alt="Imagem de historia"
-                src="../public\img\MuseuHistoria.jpg"
+                src="../../public/img/MuseuHistoria.jpg"
                 class="thq-img-ratio-16-9"
               />
             </div>
@@ -377,7 +377,7 @@
             <div class="features181-image-container">
               <img
                 alt="Exposição de Arte Moderna"
-                src="../public\img\MuseuArt.jpg"
+                src="../../public/img/MuseuArt.jpg"
                 class="thq-img-ratio-16-9"
               />
             </div>
@@ -388,7 +388,7 @@
             <div class="features171-image-container">
               <img
                 alt="MuseuCultura"
-                src="..\public\img\MuseuCultura.jpg"
+                src="../../public/img/MuseuCultura.jpg"
                 class="thq-img-ratio-16-9"
               />
             </div>
@@ -433,7 +433,7 @@
             <div class="features181-image-container">
               <img
                 alt="Exposição de Ciencia"
-                src="../public\img\MuseuCiencia.jpg"
+                src="../../public/img/MuseuCiencia.jpg"
                 class="thq-img-ratio-16-9"
               />
             </div>
@@ -444,7 +444,7 @@
             <div class="features171-image-container">
               <img
                 alt="MuseuTematico"
-                src="..\public\img\MuseuTematico.jpg"
+                src="../../public/img/MuseuTematico.jpg"
                 class="thq-img-ratio-16-9"
               />
             </div>

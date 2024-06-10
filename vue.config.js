@@ -1,9 +1,12 @@
 const webpack = require("webpack");
 
 module.exports = {
-  publicPath: '',
-  outputDir: 'static',
-  devServer: {
-    historyApiFallback: true,
-  },
-};
+  pluginOptions: {
+    i18n: {
+      locale: 'en',
+      fallbackLocale: 'en',
+      localeDir: 'locales',
+      enableInSFC: true
+    }
+  }
+}
