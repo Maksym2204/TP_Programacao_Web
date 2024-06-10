@@ -24,6 +24,8 @@ const TableList = () =>
 const Login = () => import('@/pages/Login.vue');
 const Register = () => import('@/pages/Register.vue');
 const Home = () => import('@/pages/Home.vue');
+const Museu = () => import('@/pages/Museu.vue');
+
 
 Vue.use(VueRouter);
 Vue.use(RouterPrefetch);
@@ -80,6 +82,11 @@ const routes = [
     path: '/login',
     name: 'login',
     component: Login,
+  },
+  {
+    path: '/museu',
+    name: 'museu',
+    component: Museu,
   },
   {
     path: '/register',

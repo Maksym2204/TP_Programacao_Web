@@ -1,18 +1,17 @@
-const http = require('http');
-const finalhandler = require('finalhandler');
-const serveStatic = require('serve-static');
+const express = require('express');
 const path = require('path');
 const history = require('connect-history-api-fallback');
 
-const serve = serveStatic(path.join(__dirname, 'static'), {
-  index: ['index.html', 'index.htm']
-});
+const app = express();
 
-const server = http.createServer(function onRequest(req, res) {
-  const done = finalhandler(req, res);
-  serve(req, res, done);
-});
+// Use history mode middleware
+app.use(history());
 
-server.listen(8080, () => {
-  console.log('Server running at http://localhost:8080');
+// Serve static files from the dist directory
+app.use(express.static(path.join(__dirname, 'dist')));
+
+// Start the server
+const port = process.env.PORT || 8080;
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}`);
 });
