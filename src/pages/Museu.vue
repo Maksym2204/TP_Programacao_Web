@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!DOCTYPE html>
     <html lang="en">
     <head>
       <title>MuseusLESI</title>
@@ -102,15 +101,15 @@
             <span class="logo">Museus LESI</span>
             <div data-thq="thq-navbar-nav" class="museu-desktop-menu">
               <nav class="museu-links">
-                <a rel="noopener" target="_blank" href="#historia" class="museu-nav22 bodySmall">Historia</a>
-                <a rel="noopener" target="_blank" href="#arte" class="museu-nav22 bodySmall">Arte</a>
-                <a rel="noopener" target="_blank" href="#cultura" class="museu-nav22 bodySmall">Cultura</a>
-                <a rel="noopener" target="_blank" href="#ciencia" class="museu-nav22 bodySmall">Ciencia</a>
-                <a rel="noopener" target="_blank" href="#tematico" class="museu-nav22 bodySmall">Tematico</a>
+                <a rel="noopener" href="#historia" class="museu-nav22 bodySmall">Historia</a>
+                <a rel="noopener" href="#arte" class="museu-nav22 bodySmall">Arte</a>
+                <a rel="noopener" href="#cultura" class="museu-nav22 bodySmall">Cultura</a>
+                <a rel="noopener" href="#ciencia" class="museu-nav22 bodySmall">Ciencia</a>
+                <a rel="noopener" href="#tematico" class="museu-nav22 bodySmall">Tematico</a>
               </nav>
               <div class="museu-buttons">
-                <button class="museu-login buttonFlat">Entrar</button>
-                <button class="buttonFilled">Registo</button>
+                <button class="home-login buttonFlat" onclick="window.location.href='/login'">Entrar</button>
+                <button class="buttonFilled" onclick="window.location.href='/register'">Registo</button>
               </div>
             </div>
             <div data-thq="thq-burger-menu" class="museu-burger-menu">
@@ -209,85 +208,6 @@
                   </button>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="logos9-container thq-section-padding">
-          <div class="logos9-max-width thq-section-max-width">
-            <h2 class="logos9-text thq-heading-2">
-              <span>Explore os nossos Museus</span>
-            </h2>
-          </div>
-          <div
-            class="logos9-container1 thq-mask-image-horizontal thq-animated-group-container-horizontal"
-          >
-            <div class="thq-animated-group-horizontal">
-              <img
-                alt="Museu LESI logo"
-                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84ec08e8-34e9-42c7-9445-d2806d156403/838a2368-6357-4526-a3f3-57fee519d8ec?org_if_sml=1&amp;q=80&amp;force_format=original"
-                class="logos9-logo1 thq-img-ratio-16-9"
-              />
-              <img
-                alt="Museu de Arte Moderna logo"
-                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84ec08e8-34e9-42c7-9445-d2806d156403/2cf31efa-183b-4247-920e-60025ea69bfe?org_if_sml=1&amp;q=80&amp;force_format=original"
-                class="logos9-logo2 thq-img-ratio-16-9"
-              />
-              <img
-                alt="Museu de História logo"
-                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84ec08e8-34e9-42c7-9445-d2806d156403/49215785-2559-40a7-be66-9dd3bdf5eb7a?org_if_sml=1&amp;q=80&amp;force_format=original"
-                class="logos9-logo3 thq-img-ratio-16-9"
-              />
-              <img
-                alt="Museu de Ciências logo"
-                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84ec08e8-34e9-42c7-9445-d2806d156403/c78f8e14-cf7b-4e8b-821c-3d6b89ed8db4?org_if_sml=1&amp;q=80&amp;force_format=original"
-                class="logos9-logo4 thq-img-ratio-16-9"
-              />
-              <img
-                alt="Museu Temático logo"
-                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84ec08e8-34e9-42c7-9445-d2806d156403/97476fa7-08ff-463d-99d2-c4ceb6ae9222?org_if_sml=1&amp;q=80&amp;force_format=original"
-                class="logos9-logo5 thq-img-ratio-16-9"
-              />
-              <img
-                alt="Museu Parceiro logo"
-                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84ec08e8-34e9-42c7-9445-d2806d156403/07f56a12-c428-4896-8819-194d1fef39f2?org_if_sml=1&amp;q=80&amp;force_format=original"
-                class="logos9-logo6 thq-img-ratio-16-9"
-              />
-            </div>
-            <div class="thq-animated-group-horizontal">
-              <img
-                alt="Museu LESI logo"
-                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84ec08e8-34e9-42c7-9445-d2806d156403/838a2368-6357-4526-a3f3-57fee519d8ec?org_if_sml=1&amp;q=80&amp;force_format=original"
-                class="logos9-logo11 thq-img-ratio-16-9"
-              />
-              <img
-                alt="Museu de Art logo"
-                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84ec08e8-34e9-42c7-9445-d2806d156403/2cf31efa-183b-4247-920e-60025ea69bfe?org_if_sml=1&amp;q=80&amp;force_format=original"
-                class="logos9-logo21 thq-img-ratio-16-9"
-              />
-              <img
-                alt="Museu de História logo"
-                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84ec08e8-34e9-42c7-9445-d2806d156403/49215785-2559-40a7-be66-9dd3bdf5eb7a?org_if_sml=1&amp;q=80&amp;force_format=original"
-                class="logos9-logo31 thq-img-ratio-16-9"
-              />
-              <img
-                alt="Museu de Ciências logo"
-                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84ec08e8-34e9-42c7-9445-d2806d156403/c78f8e14-cf7b-4e8b-821c-3d6b89ed8db4?org_if_sml=1&amp;q=80&amp;force_format=original"
-                class="logos9-logo41 thq-img-ratio-16-9"
-              />
-              <img
-                alt="Museu Temático logo"
-                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84ec08e8-34e9-42c7-9445-d2806d156403/97476fa7-08ff-463d-99d2-c4ceb6ae9222?org_if_sml=1&amp;q=80&amp;force_format=original"
-                class="logos9-logo51 thq-img-ratio-16-9"
-              />
-              <img
-                alt="Museu Parceiro logo"
-                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84ec08e8-34e9-42c7-9445-d2806d156403/07f56a12-c428-4896-8819-194d1fef39f2?org_if_sml=1&amp;q=80&amp;force_format=original"
-                class="logos9-logo61 thq-img-ratio-16-9"
-              />
-            </div>
-          </div>
-          <div>
-            <div class="logos9-container5">
             </div>
           </div>
         </div>
@@ -559,14 +479,9 @@
         <div class="museu-footer">
           <footer class="footerContainer museu-footer1">
             <div class="museu-container1">
-              <span class="logo">MUSEUS LESI</span>
-              <nav class="museu-nav1">
-                <span class="bodySmall">História</span>
-                <span class="museu-nav222 bodySmall">Arte</span>
-                <span class="museu-nav322 bodySmall">Cultura</span>
-                <span class="museu-nav422 bodySmall">Ciência</span>
-                <span class="museu-nav522 bodySmall">Temáticos</span>
-              </nav>
+              <router-link to="/home">
+                <span class="logo">MUSEUS LESI</span>
+              </router-link>
             </div>
             <div class="museu-separator"></div>
             <div class="museu-container2">

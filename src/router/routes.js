@@ -1,6 +1,6 @@
 import DashboardLayout from "@/layout/dashboard/DashboardLayout.vue";
 import NotFound from "@/pages/NotFoundPage.vue";
-import Lista from "@/pages/Lista.vue";
+import Lista from "@/pages/Lista1.vue";
 import Home from "@/pages/Home.vue";
 import Museu from "@/pages/Museu.vue";
 import Login from "@/pages/Login.vue";

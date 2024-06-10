@@ -26,6 +26,12 @@ const Register = () => import('@/pages/Register.vue');
 const Home = () => import('@/pages/Home.vue');
 const Museu = () => import('@/pages/Museu.vue');
 
+const Lista1 = () => import('@/pages/Lista1.vue');
+
+const Lista2 = () => import('@/pages/Lista2.vue');
+
+const Lista3 = () => import('@/pages/Lista3.vue');
+
 
 Vue.use(VueRouter);
 Vue.use(RouterPrefetch);
@@ -87,6 +93,26 @@ const routes = [
     path: '/museu',
     name: 'museu',
     component: Museu,
+  },
+  {
+    path: '/home',
+    name: 'home',
+    component: Home,
+  },
+  {
+    path: '/lista1',
+    name: 'lista1',
+    component: Lista1,
+  },
+  {
+    path: '/lista2',
+    name: 'lista2',
+    component: Lista2,
+  },
+  {
+    path: '/lista3',
+    name: 'lista3',
+    component: Lista3,
   },
   {
     path: '/register',

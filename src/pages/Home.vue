@@ -90,14 +90,16 @@
             data-thq="thq-navbar"
             class="navbarContainer home-navbar-interactive"
           >
-            <span class="logo">Museus LESI</span>
+            <router-link to="/home">
+              <span class="logo">Museus LESI</span>
+            </router-link>
             <div data-thq="thq-navbar-nav" class="home-desktop-menu">
               <nav class="home-links">
-                <span class="bodySmall">História</span>
-                <span class="home-nav22 bodySmall">Arte</span>
-                <span class="home-nav32 bodySmall">Cultura</span>
-                <span class="home-nav42 bodySmall">Ciências</span>
-                <span class="home-nav52 bodySmall">Temáticos</span>
+                <router-link to="/museu#historia" class="bodySmall">História</router-link>
+                <router-link to="/museu#arte" class="home-nav22 bodySmall">Arte</router-link>
+                <router-link to="/museu#cultura" class="home-nav32 bodySmall">Cultura</router-link>
+                <router-link to="/museu#ciencia" class="home-nav42 bodySmall">Ciências</router-link>
+                <router-link to="/museu#tematico" class="home-nav52 bodySmall">Temáticos</router-link>
               </nav>
               <div class="home-buttons">
                 <button class="home-login buttonFlat" onclick="window.location.href='/login'">Entrar</button>
@@ -195,9 +197,12 @@
                 </span>
               </span>
               <div class="home-btn-group">
-                <button class="home-hero-button1 buttonFilled">
-                  Museus parceiros
-                </button>
+                <router-link to="/museu">
+                  <button class="home-hero-button1 buttonFilled">
+                    Museus parceiros
+                  </button>
+                </router-link>
+
                 <a href="#descubra">
                   <button class="buttonFlat">Saiba mais...</button>
                 </a>
@@ -621,18 +626,104 @@
           </div>
         </div>
 
+        <div class="contact4-contact20 thq-section-padding">
+          <div class="contact4-max-width thq-section-max-width">
+            <div class="contact4-section-title">
+              <span class="thq-body-small">
+                <span>Fale connosco hoje!</span>
+              </span>
+              <div class="contact4-content">
+                <h2 class="thq-heading-2"><span>Contacte nos</span></h2>
+                <p class="thq-body-large">
+                  <span>
+                    Fale connosco para obter mais informações sobre os nossos museus parceiros,
+                     exposições em destaque e programas educativos.
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="contact4-row">
+              <div class="contact4-content1">
+                <svg viewBox="0 0 1024 1024" class="thq-icon-medium">
+                  <path
+                    d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z"
+                  ></path>
+                </svg>
+                <div class="contact4-contact-info">
+                  <div class="contact4-content2">
+                    <h3 class="contact4-text3 thq-heading-3">Email</h3>
+                    <p class="contact4-text4 thq-body-large">
+                      <span>
+                        Envie as suas perguntas e solicitações para o nosso endereço de email,
+                         onde a nossa equipa está pronta para ajudá-lo.
+                      </span>
+                    </p>
+                  </div>
+                  <span class="contact4-email thq-body-small">
+                    <span>hello@teleporthq.io</span>
+                  </span>
+                </div>
+              </div>
+              <div class="contact4-content3">
+                <svg
+                  viewBox="0 0 1024 1024"
+                  class="contact4-icon2 thq-icon-medium"
+                >
+                  <path
+                    d="M282 460q96 186 282 282l94-94q20-20 44-10 72 24 152 24 18 0 30 12t12 30v150q0 18-12 30t-30 12q-300 0-513-213t-213-513q0-18 12-30t30-12h150q18 0 30 12t12 30q0 80 24 152 8 26-10 44z"
+                  ></path>
+                </svg>
+                <div class="contact4-contact-info1">
+                  <div class="contact4-content4">
+                    <h3 class="contact4-text5 thq-heading-3">Telemovel</h3>
+                    <p class="contact4-text6 thq-body-large">
+                      <span>
+                        Ligue diretamente para nós pelo telemóvel para atendimento rápido e personalizado.
+                        <br>
+                        <span>Horário de atendimento: 9h - 18h</span>
+                      </span>
+                    </p>
+                  </div>
+                  <span class="contact4-phone thq-body-small">
+                    <span>+1 (555) 000-0000</span>
+                  </span>
+                </div>
+              </div>
+              <div class="contact4-content5">
+                <svg
+                  viewBox="0 0 1024 1024"
+                  class="contact4-icon4 thq-icon-medium"
+                >
+                  <path
+                    d="M512 0c-176.732 0-320 143.268-320 320 0 320 320 704 320 704s320-384 320-704c0-176.732-143.27-320-320-320zM512 512c-106.040 0-192-85.96-192-192s85.96-192 192-192 192 85.96 192 192-85.96 192-192 192z"
+                  ></path>
+                </svg>
+                <div class="contact4-contact-info2">
+                  <div class="contact4-content6">
+                    <h3 class="contact4-text7 thq-heading-3">Office</h3>
+                    <p class="contact4-text8 thq-body-large">
+                      <span>
+                        Visite-nos pessoalmente no nosso endereço físico
+                         para uma experiência de atendimento completa e detalhada.
+                      </span>
+                    </p>
+                  </div>
+                  <span class="contact4-address thq-body-small">
+                    <span>Campus do IPCA, Vila Frescaínha S. Martinho › 4750-810 Barcelos</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
         <div class="home-footer">
           <footer class="footerContainer home-footer1">
             <div class="home-container31">
-              <span class="logo">MUSEUS LESI</span>
-              <nav class="home-nav1">
-                <span class="bodySmall">História</span>
-                <span class="home-nav222 bodySmall">Arte</span>
-                <span class="home-nav322 bodySmall">Cultura</span>
-                <span class="home-nav422 bodySmall">Ciência</span>
-                <span class="home-nav522 bodySmall">Temáticos</span>
-              </nav>
+              <router-link to="/home">
+                <span class="logo">Museus LESI</span>
+              </router-link>
             </div>
             <div class="home-separator"></div>
             <div class="home-container32">
