@@ -268,6 +268,7 @@
                   </h2>
                   <p class="thq-body-large">
                     <span>
+                      <a rel="noopener" target="_blank" onclick="window.location.href='/lista'" class="museu-nav22 bodySmall">Historia</a>
                       Descubra a riqueza cultural e histórica dos museus, onde o passado ganha vida através de coleções fascinantes e exposições interativas.
                     </span>
                   </p>
@@ -287,6 +288,7 @@
                   <h2 id="arte" class="thq-heading-2"><span>Arte</span></h2>
                   <p class="thq-body-large">
                     <span>
+                      <a rel="noopener" target="_blank" onclick="window.location.href='/lista1'" class="museu-nav22 bodySmall">Museu Arte</a>
                       Explore as obras mais emblemáticas do movimento de arte
                       moderna em exposição nos museus parceiros.
                     </span>
@@ -321,6 +323,7 @@
                   <h2 id="cultura" class="thq-heading-2"><span>Cultura</span></h2>
                   <p class="thq-body-large">
                     <span>
+                      <a rel="noopener" target="_blank" onclick="window.location.href='/lista2'" class="museu-nav22 bodySmall">Museu Cultura</a>
                       Mergulhe na diversidade vibrante da cultura, onde tradições,
                        artes e expressões humanas se entrelaçam para celebrar
                         a identidade e a criatividade de diferentes povos.
